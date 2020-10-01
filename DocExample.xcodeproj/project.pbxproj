@@ -18,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455E21C125264C0700774669 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		455E21C225264C0700774669 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		45C4865024CD2F8400704921 /* DocExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocExampleApp.swift; sourceTree = "<group>"; };
 		45C4865124CD2F8400704921 /* DocExampleDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocExampleDocument.swift; sourceTree = "<group>"; };
 		45C4865224CD2F8400704921 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455E21C025264BEE00774669 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				455E21C125264C0700774669 /* LICENSE */,
+				455E21C225264C0700774669 /* README.md */,
+				45C4865324CD2F8500704921 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		45C4864A24CD2F8400704921 = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +72,10 @@
 		45C4864F24CD2F8400704921 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				45C4865224CD2F8400704921 /* ContentView.swift */,
 				45C4865024CD2F8400704921 /* DocExampleApp.swift */,
 				45C4865124CD2F8400704921 /* DocExampleDocument.swift */,
-				45C4865224CD2F8400704921 /* ContentView.swift */,
-				45C4865324CD2F8500704921 /* Assets.xcassets */,
+				455E21C025264BEE00774669 /* Supporting Files */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
