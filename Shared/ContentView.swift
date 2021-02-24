@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.undoManager) var undoManager
     @ObservedObject var document: DocExampleDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        TextEditor(text: .init(get: { () -> String in
+            return document.text
+        }, set: { (text) in
+            let oldText = document.text
+            document.text = text
+            undoManager?.registerUndo(withTarget: document, handler: { (document) in
+                document.text = oldText
+            })
+        }))
     }
     
 }
